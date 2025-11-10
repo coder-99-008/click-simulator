@@ -1,0 +1,59 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(19, 19, 19);
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    background: linear-gradient(to left, #32cd32, #228b22);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#clickMe {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(to bottom, #32cd32, #228b22);
+    /* green shades */
+    border: none;
+    position: relative;
+    box-shadow: 0 1.2rem 0 #555;
+    /* gray base */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 3rem;
+    color: rgb(72, 124, 22);
+}
+
+#clickMe:active {
+    box-shadow: 0 0.4rem 0 #555;
+    /* base gets shorter */
+    transform: translateY(0.8rem);
+    /* button moves down */
+}
+
+.footer {
+    background: gray;
+    padding: 0.5rem 1.5rem;
+}
