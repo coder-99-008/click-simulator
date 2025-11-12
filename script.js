@@ -72,6 +72,8 @@ function restoreGame() {
 
 // ===== Increment Logic =====
 async function increment_number () {
+    highscore.textContent = `HighScore: ${high_score}`;
+    
     let reset_number = Math.floor(Math.random() * 100);
     highscore_arr.push(reset_number);
     
@@ -80,7 +82,6 @@ async function increment_number () {
         number++;
         
         if (number == reset_number || number == 100){
-            highscore.textContent = `HighScore: ${number}`;
             save_to_localstorage();
             number = 0;
             click_btn.textContent = number;
