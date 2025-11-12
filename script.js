@@ -8,9 +8,9 @@ let navigate_to_result = document.getElementById('result');
 
 // ===== Variables. ======
 let number = 0;
-let high_score;
-let total_click = 0;
-let highscore_arr = [];
+let total_click = localStorage.getItem("totalClick") || 0;
+let highscore_arr = JSON.parse(localStorage.getItem("highscore_arr")) || [];
+let high_score = Math.max(...highscore_arr);
 
 // ===== Load Result Page =====
 async function load_result() {
