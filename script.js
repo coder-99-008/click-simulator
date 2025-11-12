@@ -26,8 +26,8 @@ async function load_result() {
         let result_totalclick = document.getElementById('result-totalclick');
         
         // get saved data.
-        highscore_arr = JSON.parse(localStorage.getItem("highscore_arr"));
-        total_click = localStorage.getItem("totalClick");
+        highscore_arr;
+        total_click;
 
         // calculate highest score.
         if(highscore_arr.length > 0){
