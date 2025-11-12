@@ -1,6 +1,8 @@
 * {
     font-family: monospace;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 body {
